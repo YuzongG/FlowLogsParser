@@ -34,7 +34,7 @@ public class Parser {
         List<FlowLogRecord> records = new ArrayList<>();
         try {
             BufferedReader lineReader = new BufferedReader(
-                    new FileReader("data.txt"));
+                    new FileReader("data.txt")); // TODO: change path
             String lineText;
             while ((lineText = lineReader.readLine()) != null) {
                 records.add(parseInternal(lineText));

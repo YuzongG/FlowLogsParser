@@ -72,7 +72,7 @@ public class LookupTable {
 
     public void outputMatchesForTag() {
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("tags.txt", false));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("tags.txt", false)); // TODO: change path
             writer.write("Tag,Count");
             writer.newLine();
             for(String k: recordsTable.keySet()){
