@@ -16,7 +16,7 @@ public class LookupTable {
 
     private void loadTables() {
         try {
-            BufferedReader lineReader = new BufferedReader(new FileReader("/Users/yuzonggao/IdeaProjects/FlowLogsParser/src/lookUpTable.txt"));
+            BufferedReader lineReader = new BufferedReader(new FileReader("lookUpTable.txt"));
             String lineText;
             while ((lineText = lineReader.readLine()) != null) {
                 loadTables(lineText);
